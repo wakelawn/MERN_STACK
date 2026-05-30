@@ -15,3 +15,7 @@ A semantic, HTML-only page demonstrating use of sections, paragraphs, header, fo
 Task 3 - CSS selectors
 
 Used colors, bg colors, selectrs to beautify the html file
+
+Task 4 - units, box models, font
+
+used box model to learn padding, margin and border
