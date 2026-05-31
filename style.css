@@ -1,33 +1,139 @@
-* {
-  box-sizing: border-box;
+*{
   margin: 0;
   padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body {
-  width: 100vw;
+#nav-bar {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  font-size: 125%;
+  margin-top: 15px;
+}
+
+.nav-bar-logo {
+  float: left;
+  margin-left: 20px;
+  padding: 16px 32px;
+  font-size: 140%;
+}
+
+.nav-bar-menu li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-bar-menu {
+  display: inline-block;
+  list-style: none;
+  padding: 16px 32px;
+}
+
+.nav-bar-user {
+  float: right;
+  margin-right: 20px;
+  background: #eaf6ff;
+  border-radius: 10px;
+  padding: 16px 32px;
+}
+
+#hero {
+  overflow: hidden;
+  padding: 5vw;
   height: 100vh;
 }
 
-main {
-  margin: 10vh 25vw;
+.hero-text {
+  float: left;
   width: 50vw;
-  height: 80vh;
+  box-sizing: border-box;
+  padding-right: 2vw;
 }
 
-#img img {
-  width: 100%;
-  max-height: 50vh;
-  display: block;
+.hero-text h1 {
+  font-size: 3vw;
+  margin-bottom: 2vh;
+  color: #333;
+  line-height: 1.2;
 }
 
-button {
-  background: linear-gradient(to right, #ffbb00, #3ae347);
-  font-family: sans-serif;
+.hero-text p {
+  font-size: 1.2vw;
+  color: #666;
+  margin-bottom: 3vh;
+  line-height: 1.5;
+}
+
+.hero-btn {
+  background: #0099FF;
   color: white;
-  width: 100%;
-  height: 6vh;
-  font-size: 2vh;
-  border: 1px solid #000000;
+  padding: 1.5vh 3vw;
+  border: none;
+  border-radius: 25px;
   cursor: pointer;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+.hero-image {
+  float: left;
+  width: 50vw;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 40vw;
+  height: auto;
+}
+
+.left-div{
+   float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+
+.left-div h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.left-div p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.left-div button{
+   background: #0099FF;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.right-div{
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.right-div img{
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+html {
+  overflow: hidden;
+  height: 100vh;
 }

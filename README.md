@@ -1,8 +1,12 @@
 Files:
 
-- index.html — The main HTML file
-- style.css - The main CSS file
-- README.md — This file
+index.html — The main HTML file
+style.css - The main CSS file
+README.md — This file
+
+weakness:
+- box model
+- img resizing and implementation
 
 Task 1 — Hello World
 
@@ -19,3 +23,6 @@ Used colors, bg colors, selectrs to beautify the html file
 Task 4 - units, box models, font
 
 used box model to learn padding, margin and border
+
+Task 5 - hero section
+use display, position and float to beautify the task 2 website
