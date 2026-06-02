@@ -1,139 +1,86 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#nav-bar {
+.container {
+  height: 100vh;
   width: 100%;
+  display: flex;
+}
+
+.side-left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center; 
   overflow: hidden;
-  text-align: center;
-  position: relative;
-  font-size: 125%;
-  margin-top: 15px;
+  background-color: #d79d68;
 }
 
-.nav-bar-logo {
-  float: left;
-  margin-left: 20px;
-  padding: 16px 32px;
-  font-size: 140%;
-}
-
-.nav-bar-menu li {
-  display: inline-block;
-  margin: 0 15px;
-}
-
-.nav-bar-menu {
-  display: inline-block;
-  list-style: none;
-  padding: 16px 32px;
-}
-
-.nav-bar-user {
-  float: right;
-  margin-right: 20px;
-  background: #eaf6ff;
-  border-radius: 10px;
-  padding: 16px 32px;
-}
-
-#hero {
-  overflow: hidden;
-  padding: 5vw;
-  height: 100vh;
-}
-
-.hero-text {
-  float: left;
-  width: 50vw;
-  box-sizing: border-box;
-  padding-right: 2vw;
-}
-
-.hero-text h1 {
-  font-size: 3vw;
-  margin-bottom: 2vh;
-  color: #333;
-  line-height: 1.2;
-}
-
-.hero-text p {
-  font-size: 1.2vw;
-  color: #666;
-  margin-bottom: 3vh;
-  line-height: 1.5;
-}
-
-.hero-btn {
-  background: #0099FF;
-  color: white;
-  padding: 1.5vh 3vw;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 1.2vw;
-  font-weight: bold;
-}
-
-.hero-image {
-  float: left;
-  width: 50vw;
-  text-align: center;
-}
-
-.hero-image img {
-  width: 40vw;
+.side-left img {
   height: auto;
+  width: auto;
+  max-width: 50vw;      
+  max-height: 60vh;
 }
 
-.left-div{
-   float: left;
-  width: 50%;
-  box-sizing: border-box;
-  padding-right: 40px;
+.side-right {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  background-color: #f5e0cd;
+  align-items: center;
+  justify-content: center; 
+  font-size: 25px;
 }
 
-.left-div h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #333;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+  width: 80%;
+  max-width: 400px;
 }
 
-.left-div p {
-  font-size: 1em;
-  color: #666;
-  margin-bottom: 30px;
+.heading {
+  text-align: center; 
 }
 
-.left-div button{
-   background: #0099FF;
-  color: white;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 1em;
-}
-
-.right-div{
-  float: left;
-  width: 50%;
+.heading p {
   text-align: center;
+  text-decoration: underline;
+  font-size: 28px;
 }
 
-.right-div img{
-  max-width: 100%;
-  height: auto;
+.login-grp {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
 }
 
-body {
-  overflow: hidden;
-  height: 100vh;
+.login-grp input {
+  font-size: 18px;
+  padding: 8px;
 }
 
-html {
-  overflow: hidden;
-  height: 100vh;
+
+.login-grp button {
+  align-self: flex-start;
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  background-color: blue;
+}
+
+.butt button {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: azure;
+  border-radius: 6px;
 }
