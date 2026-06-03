@@ -27,5 +27,8 @@ used box model to learn padding, margin and border
 Task 5 - hero section
 use display, position and float to beautify the task 2 website
 
-Task 6 - Responsiveness
+Task 6 - Flex box 
+Using display flex box 
+
+Task 7 - Responsiveness
 Using @media
