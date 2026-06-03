@@ -6,11 +6,12 @@
 
 #nav-bar {
   width: 100%;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  font-size: 125%;
+  box-sizing: border-box;
+  padding: 16px 32px;
   margin-top: 15px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
 }
 
 .nav-bar-logo {
