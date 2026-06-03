@@ -7,7 +7,6 @@ README.md — This file
 weakness:
 - box model
 - img resizing and implementation
-- Grid 
 
 Task 1 — Hello World
 
