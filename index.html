@@ -12,12 +12,30 @@
     <nav id="nav-bar">
       <div class="nav-bar-logo">Logo</div>
       <ul class="nav-bar-menu">
-        <li>Home</li>
-        <li>Services</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
       <div class="nav-bar-user">Username</div>
+      <button
+        class="nav-bar-hamburger"
+        aria-label="Open menu"
+        aria-controls="nav-bar-slide"
+      >
+        <span class="bar-1"></span>
+        <span class="bar-2"></span>
+        <span class="bar-3"></span>
+      </button>
+
+      <div id="nav-bar-slide" class="nav-bar-slide" tabindex="-1">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
     </nav>
 
     <section id="hero">

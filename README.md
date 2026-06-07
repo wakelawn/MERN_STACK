@@ -32,3 +32,6 @@ Using display flex box
 
 Task 7 - Responsiveness
 Using @media
+
+Task 8 - Hamburger Menu 
+Create a hamburger menu for mobile view only
