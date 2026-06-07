@@ -147,6 +147,14 @@
   height: auto;
 }
 
+#book-btn {
+  transition: transform 0.2s ease;
+}
+
+#book-btn:hover {
+  transform: scale(1.2) rotate(14deg);
+}
+
 body {
   overflow: hidden;
   height: 100vh;
