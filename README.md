@@ -38,3 +38,6 @@ Create a hamburger menu for mobile view only
 
 Task 9 - Transform
 Make the button transform and animated using CSS only
+
+Task 10 - CSS animations
+Use animations on the webpage
