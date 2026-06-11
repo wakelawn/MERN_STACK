@@ -41,3 +41,8 @@ Make the button transform and animated using CSS only
 
 Task 10 - CSS animations
 Use animations on the webpage
+
+Task 11 - Thala webpage - branch thala
+
+Task 12 - JS intro
+Create a program taht calculates the compound intrest
