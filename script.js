@@ -1,12 +1,72 @@
 // Tasks:
-//  Write a JavaScript program that performs the following operations on a given
-// number:
 //  Find the sum of first n numbers where n is a variable.
+let n = 5;
+let sum = 0;
+
+for (let i = 0; i <= n; i++) {
+  sum = sum + i;
+}
+console.log("The sum of first " + n + " number is: " + sum);
+
 // Print table of n where n is a variable.
+
+console.log("The table of " + n + "  is displayed below:");
+
+for (let i = 1; i <= 10; i++) {
+  console.log(n + "*" + i + "=" + i * n);
+}
+
 // Check if it is a prime number.
+
+const num1 = 11;
+
+if (num1 / num1 == 1) {
+  console.log("The number " + num1 + " is a prime number");
+} else {
+  console.log("The number" + num1 + "is not a prime number");
+}
+
 // Print all its factors.
+
+const num2 = 30;
+
+console.log("The factors of " + num2 + " are:");
+
+for (let i = 1; i <= num2; i++) {
+  if (num2 % i === 0) {
+    console.log(i);
+  }
+}
+
 // Find sum of all digits of a number (139 = 13 => 1+3+9 =13).
-// Check if it is an Armstrong number.
-// - An Armstrong number is one whose sum of digits raised to the power three equals the number ( ex 153 => 1^3 + 5^3 + 3^3 = 153 )
-//  Use different variables for checking all the things
-// Display the results of each operation to the user using console.log.
+
+let num3 = 139;
+let sum1 = 0;
+
+console.log("The sum of all digit of the number " + num3);
+
+while (num3 > 0) {
+  let remainder = num3 % 10;
+  sum1 += remainder;
+  num3 = (num3 - remainder) / 10;
+}
+
+console.log(sum1);
+
+// Check if it is an Armstrong number - An Armstrong number is one whose sum of digits raised to the power three equals the number ( ex 153 => 1^3 + 5^3 + 3^3 = 153 )
+
+let num4 = 153;
+let oNum = num4; 
+let sum2 = 0;
+
+while (num4 > 0) {
+  let remainder = num4 % 10;        
+  sum2 += (remainder ** 3);    
+  num4 = (num4 - remainder) / 10;  
+}
+
+if (sum2 === oNum) {
+    console.log(oNum +" is an Armstrong number.");
+} else {
+  console.log(oNum +" is not an Armstrong number.");
+}
