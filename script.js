@@ -1,17 +1,42 @@
-//A=P(1+(r/n))^nt
-// Where:
-// . A = amount
-// . P = principal
-// . r = rate of interest
-// . n = number of times interest is compounded per year
-// . t = time (in years)
+// The objective of this assignment is to create a JavaScript program that
+// checks whether a given number is even or odd.
 
-let p = 50000;
-let r = 0.03;
-let n = 1;
-let t = 3;
+let num1 = 5;
+let num2 = 10;
+let num3 = 15;
+let num4 = 20;
+let num5 = 25;
+let num6 = 30;
 
+if (num1 % 2) {
+  console.log("The number", num1, " is even. ");
+} else {
+  console.log("The number", num1, "is odd.");
+}
 
-a = p * ((1 + r / n) ** (n * t))
-
-console.log("The Compound interest after 3 years will be", a);
+if (num2 % 2) {
+  console.log("The number", num2, " is even. ");
+} else {
+  console.log("The number", num2, "is odd.");
+}
+if (num3 % 2) {
+  console.log("The number", num3, " is even. ");
+} else {
+  console.log("The number", num3, "is odd.");
+}
+if (num4 % 2) {
+  console.log("The number", num4, " is even. ");
+  6;
+} else {
+  console.log("The number", num4, "is odd.");
+}
+if (num5 % 2) {
+  console.log("The number", num5, " is even. ");
+} else {
+  console.log("The number", num5, "is odd.");
+}
+if (num6 % 2) {
+  console.log("The number", num6, " is even. ");
+} else {
+  console.log("The number", num6, "is odd.");
+}

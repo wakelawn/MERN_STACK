@@ -46,3 +46,6 @@ Task 11 - Thala webpage - branch thala
 
 Task 12 - JS intro
 Create a program taht calculates the compound intrest
+
+Task 13 - If else and switch
+Check if a number is even or odd
