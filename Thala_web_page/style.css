@@ -14,6 +14,7 @@ body {
   gap: 25px;
 }
 
+/* Decorative background pattern */
 .boxes {
   border-color: black;
   border: black;
@@ -24,38 +25,225 @@ body {
   opacity: 3.5%;
 }
 
+/* Fixed navbar at top */
 .nav-bar {
   position: fixed;
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
-  background-color: aliceblue;
+  font-size: 16px;
+  padding: 0 20px;
+  height: 70px;
 }
 
+/* Logo container */
 .nav-bar-logo {
-  display: inline;
-  justify-content: left;
-  padding: 16px;
-  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
 }
 
+.nav-bar-logo div {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+/* Orange "Thala" text */
 #t-1 {
-  color: orange;
+  color: #ff9500;
+  font-size: 22px;
+  font-weight: bold;
 }
 
+/* Blue "7." number */
 #t-2 {
-  color: blue;
+  color: #2e43ff;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-/* .nav-bar-logo div span{
-    gap: 100px;
-} */
+/* Centered navigation menu */
+.nav-bar-main {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin: 0 40px;
+}
 
 .nav-bar-main ul {
   display: flex;
   list-style: none;
-  border: 1px solid black;
-  gap: 60px;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-bar-main ul li div {
+  color: #999;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-bar-main ul li div:hover {
+  color: #333;
+}
+
+/* Gray rounded search box */
+.nav-bar-search {
+  display: flex;
+  align-items: center;
+  background-color: #e8e5e0;
+  border-radius: 25px;
+  padding: 8px 14px;
+  gap: 8px;
+  min-width: 200px;
+  border: none;
+  flex-shrink: 0;
+}
+
+/* Search content wrapper */
+.nav-bar-search > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Search icon container */
+.icon-search {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Search icon image */
+.icon-search img {
+  height: 16px;
+  width: auto;
+  opacity: 0.6;
+}
+
+/* Search input field */
+.nav-bar-search input {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  outline: none;
+}
+
+.nav-bar-search input::placeholder {
+  color: #a8a09f;
+}
+
+/*  rounded cart button */
+.nav-bar-add-to-cart {
+  display: flex;
+  align-items: center;
+  background-color: #ddd5ff;
+  border-radius: 25px;
+  padding: 8px 12px;
+  gap: 6px;
+  border: none;
+  min-width: auto;
+}
+
+/* Cart content wrapper */
+.nav-bar-add-to-cart > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+
+/* Cart icon container */
+.icon-cart {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Cart icon image */
+.icon-cart img {
+  height: 16px;
+  width: auto;
+  opacity: 0.8;
+}
+
+/* cart counter button */
+.nav-bar-add-to-cart button {
+  border: none;
+  background-color: transparent;
+  font-size: 13px;
+  color: #5555ff;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Profile picture container */
+.nav-bar-pp {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* Circular profile avatar */
+.nav-bar-pp img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Right navbar section container */
+.nav-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* To match the nav bar */
+main {
+  padding-top: 70px; 
+  padding-bottom: 70px;
+}
+
+/* hero section  */
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  border: 1px black solid;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.right{
+  border: 1px black solid;
+}
+
+/* To match the main */
+footer{
+  padding-top: 60vh;
+}
+
+.service {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.service div {
+  flex: 1;              
+  border: 1px solid rgb(255, 0, 0);
 }
