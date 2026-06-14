@@ -52,3 +52,6 @@ Check if a number is even or odd
 
 Task 14 - loops
 perfom various program related to loops
+
+Task 15 - Arrays and Functions
+Explained arrays and types of func in detail
