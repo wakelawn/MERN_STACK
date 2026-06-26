@@ -55,3 +55,6 @@ perfom various program related to loops
 
 Task 15 - Arrays and Functions
 Explained arrays and types of func in detail
+
+Task 16 - Maps and filter
+Use map and filter option to build a page where one can search using only the initials
