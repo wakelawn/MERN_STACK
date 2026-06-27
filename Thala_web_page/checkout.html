@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Checkout</title>
+  </head>
+  <body class="checkout-page">
+    <header>
+      <div class="containers">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+      </div>
+      <nav class="nav-bar">
+        <div class="nav-bar-logo">
+          <div><span id="t-1">Thala</span><span id="t-2">7.</span></div>
+        </div>
+
+        <div class="nav-bar-main">
+          <ul>
+            <li><div class="nav-bar-home">Home</div></li>
+            <li><div class="nav-bar-about">About</div></li>
+            <li><div class="nav-bar-brands">Brands</div></li>
+            <li><div class="nav-bar-more">More</div></li>
+            <li><div class="nav-bar-contact">Contact</div></li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <div class="nav-bar-search">
+            <div>
+              <span class="icon-search"
+                ><img src="magnifying-glass-solid-full.svg" alt="search"
+              /></span>
+              <input type="text" placeholder="Search" />
+            </div>
+          </div>
+
+          <a class="nav-bar-add-to-cart cart-link" href="cart.html">
+            <div>
+              <span class="icon-cart"
+                ><img src="cart-arrow-down-solid-full.svg" alt="cart"
+              /></span>
+              <span class="cart-count">1</span>
+            </div>
+          </a>
+
+          <div class="nav-bar-pp">
+            <img src="simple_flower_image_2K_202606151316.jpeg" alt="logo" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="checkout-page-layout">
+        <div class="checkout-main-grid">
+          <div class="checkout-left-panel">
+            <span class="checkout-subtitle">Checkout</span>
+
+            <h2>Contact Details</h2>
+            <div class="form-group">
+              <label for="email">Email ID</label>
+              <input type="email" id="email" placeholder="John Doe" />
+            </div>
+
+            <h2>Payment</h2>
+            <div class="payment-box">
+              <div class="payment-methods">
+                <button type="button" class="method-btn active">
+                  <span class="icon">💳</span> Card
+                </button>
+                <button type="button" class="method-btn">
+                  <span class="icon">₿</span> Crypto
+                </button>
+                <button type="button" class="method-btn">
+                  <span class="icon">🏦</span> Bank
+                </button>
+                <button type="button" class="method-btn icon-only">⋮</button>
+              </div>
+
+              <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="John Doe" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="expiry">Expiry</label>
+                  <input type="text" id="expiry" placeholder="MM/YY" />
+                </div>
+                <div class="form-group">
+                  <label for="cvc">CVC</label>
+                  <input type="password" id="cvc" placeholder="•••" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="country">Country</label>
+                  <select id="country">
+                    <option>India</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="zip">ZIP</label>
+                  <input type="text" id="zip" placeholder="XXXXX" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="checkout-right-panel">
+            <h2 class="summary-heading">Order Summary</h2>
+            <div class="coupon-card">
+              <label for="coupon-code">Enter Coupon Code</label>
+              <div class="coupon-row">
+                <input id="coupon-code" type="text" placeholder="COUPON CODE" />
+                <button type="button">Apply Coupon</button>
+              </div>
+              <dl class="cart-totals">
+                <div>
+                  <dt>Sub Total</dt>
+                  <dd>₹4,700</dd>
+                </div>
+                <div>
+                  <dt>Taxes(if applicable)</dt>
+                  <dd>₹199</dd>
+                </div>
+                <div>
+                  <dt>Discount</dt>
+                  <dd>₹0</dd>
+                </div>
+                <div class="cart-total-row">
+                  <dt>Total</dt>
+                  <dd>₹4,999</dd>
+                </div>
+              </dl>
+            </div>
+            <button class="pay-now-btn" type="button">Pay Now ₹4,999</button>
+            <div class="razorpay-row">
+              <span class="secure-badge">SECURE</span>
+              <span class="razorpay-wordmark">Razorpay</span>
+              <span class="secure-badge">PAYMENT</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
