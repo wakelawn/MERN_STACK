@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cart</title>
+  </head>
+  <body class="cart-page">
+    <header>
+      <div class="containers">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+      </div>
+      <nav class="nav-bar">
+        <div class="nav-bar-logo">
+          <div><span id="t-1">Thala</span><span id="t-2">7.</span></div>
+        </div>
+
+        <div class="nav-bar-main">
+          <ul>
+            <li><div class="nav-bar-home">Home</div></li>
+            <li><div class="nav-bar-about">About</div></li>
+            <li><div class="nav-bar-brands">Brands</div></li>
+            <li><div class="nav-bar-more">More</div></li>
+            <li><div class="nav-bar-contact">Contact</div></li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <div class="nav-bar-search">
+            <div>
+              <span class="icon-search"
+                ><img src="magnifying-glass-solid-full.svg" alt="search"
+              /></span>
+              <input type="text" placeholder="Search" />
+            </div>
+          </div>
+
+          <a class="nav-bar-add-to-cart cart-link" href="cart.html">
+            <div>
+              <span class="icon-cart"
+                ><img src="cart-arrow-down-solid-full.svg" alt="cart"
+              /></span>
+              <span class="cart-count">0</span>
+            </div>
+          </a>
+
+          <div class="nav-bar-pp">
+            <img src="simple_flower_image_2K_202606151316.jpeg" alt="logo" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cart-page-layout">
+        <div class="cart-main-grid">
+          <div class="cart-left-panel">
+            <h1>Shopping Cart</h1>
+
+            <div class="cart-table-wrap">
+              <table class="cart-table">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th aria-label="Remove"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="cart-product-cell">
+                        <div class="cart-product-meta">
+                          <strong
+                            >Seven By M.S.Dhoni Women's Hogun Multi-Color
+                            Running Shoes</strong
+                          >
+                          <span>Placeholder product description</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cart-qty-control">
+                        <button type="button" aria-label="Decrease quantity">
+                          −
+                        </button>
+                        <span>1</span>
+                        <button type="button" aria-label="Increase quantity">
+                          +
+                        </button>
+                      </div>
+                    </td>
+                    <td>₹4,999</td>
+                    <td>
+                      <button
+                        class="cart-remove-btn"
+                        type="button"
+                        aria-label="Remove item"
+                      >
+                        ×
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="cart-product-cell">
+                        <div class="cart-product-meta">
+                          <strong
+                            >Seven By M.S.Dhoni Women's Hogun Multi-Color
+                            Running Shoes</strong
+                          >
+                          <span>Placeholder product description</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cart-qty-control">
+                        <button type="button" aria-label="Decrease quantity">
+                          −
+                        </button>
+                        <span>1</span>
+                        <button type="button" aria-label="Increase quantity">
+                          +
+                        </button>
+                      </div>
+                    </td>
+                    <td>₹4,999</td>
+                    <td>
+                      <button
+                        class="cart-remove-btn"
+                        type="button"
+                        aria-label="Remove item"
+                      >
+                        ×
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="cart-product-cell">
+                        <div class="cart-product-meta">
+                          <strong
+                            >Seven By M.S.Dhoni Women's Hogun Multi-Color
+                            Running Shoes</strong
+                          >
+                          <span>Placeholder product description</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cart-qty-control">
+                        <button type="button" aria-label="Decrease quantity">
+                          −
+                        </button>
+                        <span>1</span>
+                        <button type="button" aria-label="Increase quantity">
+                          +
+                        </button>
+                      </div>
+                    </td>
+                    <td>₹4,999</td>
+                    <td>
+                      <button
+                        class="cart-remove-btn"
+                        type="button"
+                        aria-label="Remove item"
+                      >
+                        ×
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <a class="cart-return-link" href="index.html">Continue Shopping</a>
+          </div>
+
+          <aside class="cart-right-panel">
+            <div class="coupon-card">
+              <label for="coupon-code">Enter Coupon Code</label>
+              <div class="coupon-row">
+                <input id="coupon-code" type="text" placeholder="COUPON CODE" />
+                <button type="button">Apply Coupon</button>
+              </div>
+
+              <dl class="cart-totals">
+                <div>
+                  <dt>Sub Total</dt>
+                  <dd>₹4,700</dd>
+                </div>
+                <div>
+                  <dt>Taxes (if applicable)</dt>
+                  <dd>₹199</dd>
+                </div>
+                <div>
+                  <dt>Discount</dt>
+                  <dd>₹0</dd>
+                </div>
+                <div class="cart-total-row">
+                  <dt>Total</dt>
+                  <dd>₹4,999</dd>
+                </div>
+              </dl>
+            </div>
+
+            <button class="pay-now-btn" type="button">Pay Now ₹4,999</button>
+
+            <div class="razorpay-row" aria-label="Secure payment badges">
+              <span class="secure-badge">SECURE</span>
+              <span class="razorpay-wordmark">Razorpay</span>
+              <span class="secure-badge">PAYMENT</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
