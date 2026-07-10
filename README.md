@@ -5,6 +5,7 @@ style.css - The main CSS file
 README.md — This file
 
 weakness:
+
 - box model
 - img resizing and implementation
 
@@ -27,13 +28,13 @@ used box model to learn padding, margin and border
 Task 5 - hero section
 use display, position and float to beautify the task 2 website
 
-Task 6 - Flex box 
-Using display flex box 
+Task 6 - Flex box
+Using display flex box
 
 Task 7 - Responsiveness
 Using @media
 
-Task 8 - Hamburger Menu 
+Task 8 - Hamburger Menu
 Create a hamburger menu for mobile view only
 
 Task 9 - Transform
@@ -57,4 +58,12 @@ Task 15 - Arrays and Functions
 Explained arrays and types of func in detail
 
 Task 16 - Maps and filter
-Use map and filter option to build a page where one can search using only the initials
+Use map and filter option to build a page where one can search students by name in real time
+
+How to Run
+
+1. Open the folder in VS Code
+2. Open "index.html" in a browser, or use Live Server if you have it installed
+3. Type a student name in the search box to see the list filter in real time
+
+NOte: I am not able to see the task vedio for a while for this single task. I saw it once then waited for a while and support said it will be fixed but its not fixed. It says i]you cannot open this design. So please check if it can be fixed.

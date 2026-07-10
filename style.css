@@ -54,17 +54,51 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 100px;
   margin: 1px 10px 1px 10px;
 }
 
-.stud-details div {
+.student-card {
   border: 5px solid rgb(177, 232, 255);
   border-radius: 15px;
-  padding: 5px;
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
-.stud-details div p {
-  margin: 9px 8px;
+.student-card p {
+  margin: 9px 0;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  padding: 20px;
+  text-align: center;
+  border: 2px dashed #8cced6;
+  border-radius: 15px;
+  background-color: #f8ffff;
+}
+
+@media (max-width: 900px) {
+  .stud-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .searchbar {
+    position: static;
+  }
+
+  .stud-details {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+  }
 }
