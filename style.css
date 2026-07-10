@@ -64,3 +64,7 @@ button {
   border-radius: 15px;
   padding: 5px;
 }
+
+.stud-details div p {
+  margin: 9px 8px;
+}
