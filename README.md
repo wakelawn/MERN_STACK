@@ -62,12 +62,13 @@ Use map and filter option to build a page where one can search students by name 
 
 How to Run
 
-1. Open the folder in VS Code
-2. Open "index.html" in a browser, or use Live Server if you have it installed
-3. Type a student name in the search box to see the list filter in real time
-
-NOte: I am not able to see the task vedio for a while for this single task. I saw it once then waited for a while and support said it will be fixed but its not fixed. It says you cannot open this design. So please check if it can be fixed.
+1 Open the folder in VS Code
+2 Open "index.html" in a browser, or use Live Server if you have it installed
+3 Type a student name in the search box to see the list filter in real time
 
 Task 17 - JavaScript CallBack hellls and Promises
 Use promises to make a division function
+
+Task 18 -DOm Mnaipulation 
+Using dom attributes to manipulate the HTML content directly via js in a static manner or dynamic manner
 
