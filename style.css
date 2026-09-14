@@ -2,70 +2,84 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  padding-top: 50px;
-  background-color: #f9f9f9;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: sans-serif;
 }
 
-.input-section {
-  display: flex;
-  gap: 8px;
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;   
+    border: 3px rgb(255, 243, 243) solid;
+    box-shadow: 0 0 15px 2px #23272c;
+    height: 80px    ;
 }
 
-input {
-  padding: 8px 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+@keyframes pulse {
+  from {
+    text-shadow: 
+      0 0 10px #5703ff, 
+      0 0 20px #ff0707;
+  }
+  to {
+    text-shadow: 
+      0 0 10px #5703ff, 
+      0 0 20px #05ff09, 
+      0 0 40px #ff0707;
+  }
 }
 
-button {
-  padding: 8px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  background-color: #333;
-  color: #fff;
-  border-radius: 4px;
-}
-
-.box-container {
-  display: flex;
-  gap: 16px;
-}
-
-.box-red,.box-blue,.box-green,.box-yellow {
-  width: 100px;
-  height: 100px;
-  border: 2px solid #333;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#logo{
+   color: #000000bf;
+  animation: pulse 1.9s ease-in-out infinite alternate;
   font-weight: bold;
+  font-size: x-large;
+}
+
+#list{
+    display: flex;
+    justify-content:space-around;
+    gap: 20px;
+    animation: pulse 1.9s ease-in-out infinite alternate;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.btn span {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  color: #38b8d0;
+  background: #effcff;
+  font-size: 12px;
+}
+
+
+.btn-inner{
+  border: 0;
+  border-left: 1px solid #00d9ff;
+  padding: 8px 14px;
+  color: #fff;
+  background: #ff1493;
   cursor: pointer;
-  background-color: rgb(252, 252, 252);
 }
 
-.box-red.active {
-  background-color: red;
-}
-
-.box-blue.active {
-  background-color: blue;
-}
-
-.box-green.active {
-  background-color: green;
-}
-
-.box-yellow.active {
-  background-color: yellow;
+.btn span{
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  color: #111;
+  background: #46d1ff;
 }
