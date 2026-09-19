@@ -60,8 +60,7 @@ Explained arrays and types of func in detail
 Task 16 - Maps and filter
 Use map and filter option to build a page where one can search students by name in real time
 
-How to Run
-
+How to Run:
 1 Open the folder in VS Code
 2 Open "index.html" in a browser, or use Live Server if you have it installed
 3 Type a student name in the search box to see the list filter in real time
@@ -69,6 +68,11 @@ How to Run
 Task 17 - JavaScript CallBack hellls and Promises
 Use promises to make a division function
 
-Task 18 -DOm Mnaipulation 
+Task 18 - D.O.M Manipulation 
 Using dom attributes to manipulate the HTML content directly via js in a static manner or dynamic manner
 
+Task 19 - Javascript DOM project
+Project: Service Booking Web App
+Built with: HTML (semantic sections), CSS (flex, box model, animations, media queries), JS (arrays, DOM, map/filter)
+Features: Nav bar, service grid, cart display, add/book functionality
+As per statement: User can browse services, add to cart, and book them.
