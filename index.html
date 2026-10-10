@@ -1,100 +1,156 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Service Booking Web App</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav class="nav-bar">
-    <div id="logo">Logo</div>
-    <ul id="list">
-      <li>Home</li>
-      <li>Services</li>
-      <li>Contact Us</li>
-      <li>About Us</li>
-    </ul>
-    <div class="btn">
-      <span>Username</span>
-      <button class="btn-inner">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-          <polyline points="16 17 21 12 16 7"></polyline>
-          <line x1="21" y1="12" x2="9" y2="12"></line>
-        </svg>
-      </button>
-    </div>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Booking Web App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div id="logo">Logo</div>
 
-  <main>
-    <section class="left">
-  <div class="added-items">
-    <h2>Added Items</h2>
+      <ul id="list">
+        <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+        <li>
+          <a href="#services" class="nav-link" data-section="services">Services</a>
+        </li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+      </ul>
 
-    <div>
-      <div class="header-left">
-        <span class="col-sno">S.No</span>
-        <span class="col-name">Service Name</span>
-        <span class="col-price">Price</span>
+      <div class="btn">
+        <span id="username">Guest</span>
+        <button
+          class="btn-inner"
+          id="logout-btn"
+          type="button"
+          title="Logout"
+          aria-label="Logout"
+        >
+          [-&gt;
+        </button>
       </div>
+    </nav>
 
-      <div class="body-left">
-        <div class="info-icon">&#9432;</div>
-        <div class="empty-title">No Items Added</div>
-        <div class="empty-subtitle">Add items to the cart from the services bar</div>
-      </div>
+    <main id="home">
+      <section class="left" aria-label="Cart and booking">
+        <div class="added-items">
+          <h2>Added Items</h2>
 
-      <div class="footer-left">
-        <span class="footer-label">Total Amount</span>
-        <span class="footer-price">&#8377; 0</span>
-      </div>
-    </div>
-  </div>
+          <div>
+            <div class="header-left">
+              <span class="col-sno">S.No</span>
+              <span class="col-name">Service Name</span>
+              <span class="col-price">Price</span>
+              <span class="col-action">Action</span>
+            </div>
 
-  <div class="book-now-form">
-  <h2>Book Now</h2>
+            <div class="cart-body" id="cart-body">
+              <!-- cart rows injected by js -->
+            </div>
 
-  <form action="booking" class="book-form">
-    <div class="form-group">
-      <label for="f-name">Full Name</label>
-      <input type="text" id="f-name" placeholder="John Doe">
-    </div>
+            <div class="footer-left">
+              <span class="footer-label">Total Amount</span>
+              <span class="footer-price" id="total-price">&#8377; 0</span>
+            </div>
+          </div>
+        </div>
 
-    <div class="two-col-row">
-      <div class="form-group">
-        <label for="email">Email ID</label>
-        <input type="email" id="email" placeholder="mails@gmail.com">
-      </div>
+        <div class="book-now-form">
+          <h2>Book Now</h2>
 
-      <div class="form-group">
-        <label for="p-number">Phone Number</label>
-        <input type="tel" id="p-number" placeholder="0000000000">
-      </div>
-    </div>
+          <form class="book-form" id="book-form" novalidate>
+            <div class="form-group">
+              <label for="f-name">Full Name</label>
+              <input
+                type="text"
+                id="f-name"
+                name="fullName"
+                placeholder="John Doe"
+                autocomplete="name"
+              />
+              <span class="field-error" id="err-name"></span>
+            </div>
 
-    <button type="submit" class="btn-book">Book now</button>
-  </form>
-</div>
-</section>
+            <div class="two-col-row">
+              <div class="form-group">
+                <label for="email">Email ID</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="mails@gmail.com"
+                  autocomplete="email"
+                />
+                <span class="field-error" id="err-email"></span>
+              </div>
 
-    <section class="right">
-      <h2>Browse Our Services</h2>
-      <p>Click on the add to cart button to add the services to your cart or press skip</p>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="98765 43210"
+                  autocomplete="tel"
+                />
+                <span class="field-error" id="err-phone"></span>
+              </div>
+            </div>
 
-      <div class="services">
-        <img src="assests/washing.jpg" alt="services">
-        <div class="priceWithService"><span>Dry Cleaning</span><span>&#8377;200.00</span></div>
-      </div>
-      <div class="buttons-sna">
-        <button class="skip">Skip Item <span>⊖</span></button>
-        <button class="add">Add Item <span>⊕</span></button>
-      </div>
-      
-      <div class="error-line">&#9432;<span> Add the items to the cart and book now</span></div>
-    </section>
-  </main>
+            <span class="field-error" id="err-cart"></span>
 
-  <script src="script.js"></script>
-</body>
+            <button class="btn-book" type="submit">Book now</button>
+
+            <p class="booking-success" id="booking-success" hidden>
+              <span class="success-icon">&#9432;</span>
+              <span>Your booking is confirmed</span>
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="right" id="services" aria-label="Browse services">
+        <h2>Browse Our Services</h2>
+        <p>
+          Click on the add to cart button to add the services to your cart or
+          press skip
+        </p>
+
+        <div class="services" id="service-view">
+          <img id="service-image" src="assests/stain.jpg" alt="Service illustration" />
+          <div class="priceWithService">
+            <span id="service-name">Stain Removal</span>
+            <span id="service-price">&#8377; 500</span>
+          </div>
+        </div>
+
+        <div class="all-reviewed" id="all-reviewed" hidden>
+          <div class="empty-title">All services reviewed</div>
+          <div class="empty-subtitle">
+            You have gone through every service we offer.
+          </div>
+          <button class="btn-book browse-again" id="browse-again" type="button">
+            Browse Services Again
+          </button>
+        </div>
+
+        <div class="buttons-sna" id="service-buttons">
+          <button class="skip" id="skip-btn" type="button">
+            Skip Item <span>&#8860;</span>
+          </button>
+          <button class="add" id="add-btn" type="button">
+            Add Item <span>&#8853;</span>
+          </button>
+        </div>
+
+        <div class="error-line">
+          &#9432;<span> Add the items to the cart and book now</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>

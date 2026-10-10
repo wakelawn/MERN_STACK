@@ -12,8 +12,6 @@ body {
   background-color: #eef1f5;
 }
 
-/* ---------- Navbar ---------- */
-
 .nav-bar {
   display: flex;
   justify-content: space-around;
@@ -60,15 +58,29 @@ body {
   height: 32px;
   margin-left: -16px;
   border-radius: 50%;
-  color: #ffffff;
-  background: #f87171;
+  color: #b53b57;
+  background: #fbdde3;
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
 }
 
-/* ---------- Layout ---------- */
+.btn-inner:hover {
+  background: #f6c9d3;
+}
+
+.btn-inner:active {
+  transform: scale(0.92);
+}
 
 main {
   display: flex;
@@ -101,8 +113,6 @@ main {
   background-color: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
-
-/* ---------- Added Items card ---------- */
 
 .added-items h2 {
   text-align: center;
@@ -139,7 +149,42 @@ main {
   text-align: right;
 }
 
-.left .added-items .body-left {
+.col-action {
+  width: 44px;
+  text-align: right;
+}
+
+.remove-btn {
+  border: none;
+  background: #fdeaea;
+  color: #e05252;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.remove-btn:hover {
+  background: #f6c9d3;
+}
+
+.remove-btn:active {
+  transform: scale(0.9);
+}
+
+.left .added-items .cart-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.left .added-items .cart-empty {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -148,6 +193,15 @@ main {
   gap: 4px;
   text-align: center;
   padding: 10px 0;
+}
+
+.left .added-items .cart-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #1f2937;
+  border-bottom: 1px solid #f1f3f7;
 }
 
 .info-icon {
@@ -176,8 +230,6 @@ main {
   border-top: 1px solid #e5e7eb;
   margin: 0 -16px;
 }
-
-/* ---------- Book Now card ---------- */
 
 .book-now-form {
   padding: 14px 16px 16px;
@@ -224,13 +276,31 @@ main {
 .btn-book {
   width: 100%;
   padding: 11px 0;
-  background-color: #b9baf9;
+  background-color: #5b5bd6;
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.btn-book:hover {
+  background-color: #4a4ac4;
+}
+
+.btn-book:active {
+  transform: scale(0.98);
+}
+
+.btn-book.browse-again {
+  width: auto;
+  align-self: center;
+  margin-top: 14px;
+  padding: 10px 22px;
 }
 
 .two-col-row {
@@ -242,8 +312,6 @@ main {
 .two-col-row .form-group {
   flex: 1;
 }
-
-/* ---------- Services card (right) ---------- */
 
 .right {
   flex: 1;
@@ -339,4 +407,60 @@ main {
   padding-top: 14px;
   color: #2563eb;
   font-size: 13px;
+}
+
+#list a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#list a:hover {
+  color: #2563eb;
+}
+
+#list li {
+  cursor: pointer;
+}
+
+.all-reviewed {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.field-error {
+  display: block;
+  min-height: 16px;
+  font-size: 12px;
+  color: #e05252;
+  line-height: 1.3;
+}
+
+.form-group input:focus {
+  border-color: #b9baf9;
+}
+
+.booking-success {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.booking-success .success-icon {
+  font-size: 15px;
 }
